@@ -1,0 +1,72 @@
+# depslib dependency file v1.0
+1743341422 source:d:\proj\doge.cpp
+	"doge.h"
+	<stdio.h>
+	<iostream>
+
+1742999099 d:\proj\doge.h
+	"lib.h"
+	"pipe.h"
+
+1742999596 d:\proj\lib.h
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+	<string>
+	<vector>
+	<stdio.h>
+
+1742999172 d:\proj\pipe.h
+	"lib.h"
+	<iostream>
+	<vector>
+
+1743339954 source:d:\proj\game.cpp
+	"game.h"
+	"lib.h"
+	<iostream>
+
+1743341350 d:\proj\game.h
+	"doge.h"
+	"pipe.h"
+	"land.h"
+	<string>
+	<fstream>
+	<sstream>
+
+1742999129 d:\proj\land.h
+	"lib.h"
+	<vector>
+
+1742999186 d:\proj\sound.h
+	<SDL_mixer.h>
+	<string>
+	"lib.h"
+
+1743086928 source:d:\proj\land.cpp
+	"land.h"
+	<stdio.h>
+	<iostream>
+	<stdlib.h>
+
+1743086917 source:d:\proj\lib.cpp
+	"game.h"
+	<iostream>
+
+1743341223 source:d:\proj\main.cpp
+	"game.h"
+	"lib.h"
+	<time.h>
+	<stdlib.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+	<SDL_mixer.h>
+
+1743086902 source:d:\proj\pipe.cpp
+	"pipe.h"
+	"stdio.h"
+
+1743339268 source:d:\proj\sound.cpp
+
