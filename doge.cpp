@@ -5,7 +5,6 @@
 bool doge::init(bool isDark)
 {
     string shiba_path = "res/image/shiba.png";
-    if (isDark) shiba_path = "res/image/shiba.png";
     if (saved_path == shiba_path)
     {
         posDoge.getPos(75, SCREEN_HEIGHT / 2 - 10);

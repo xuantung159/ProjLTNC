@@ -114,46 +114,9 @@ void game::renderScoreSmall()
 	for (signed char i = len - 1; i >= 0; i--)
 	{
 		signed char number = s[i] - '0';
-		if (number == 1)
-		{
-			image.Load("res/number/small/1.png", scaleNumberS);
-		}
-		else if (number == 2)
-		{
-			image.Load("res/number/small/2.png", scaleNumberS);
-		}
-		else if (number == 3)
-		{
-			image.Load("res/number/small/3.png", scaleNumberS);
-		}
-		else if (number == 4)
-		{
-			image.Load("res/number/small/4.png", scaleNumberS);
-		}
-		else if (number == 5)
-		{
-			image.Load("res/number/small/5.png", scaleNumberS);
-		}
-		else if (number == 6)
-		{
-			image.Load("res/number/small/6.png", scaleNumberS);
-		}
-		else if (number == 7)
-		{
-			image.Load("res/number/small/7.png", scaleNumberS);
-		}
-		else if (number == 8)
-		{
-			image.Load("res/number/small/8.png", scaleNumberS);
-		}
-		else if (number == 9)
-		{
-			image.Load("res/number/small/9.png", scaleNumberS);
-		}
-		else
-		{
-			image.Load("res/number/small/0.png", scaleNumberS);
-		}
+		string load_image = "res/number/small/" + to_string(number) + ".png";
+		image.Load(load_image, scaleNumberS);
+
 		image.Render(260 - image.getWidth() * (len - i - 1) * 0.75 - 5 * (len - i - 1), 268);
 	}
 	image.free();
@@ -168,46 +131,8 @@ void game::renderScoreLarge()
 	for (signed char i = 0; i < len; i++)
 	{
 		signed char number = s[i] - '0';
-		if (number == 1)
-		{
-			image.Load("res/number/large/1.png", 1);
-		}
-		else if (number == 2)
-		{
-			image.Load("res/number/large/2.png", 1);
-		}
-		else if (number == 3)
-		{
-			image.Load("res/number/large/3.png", 1);
-		}
-		else if (number == 4)
-		{
-			image.Load("res/number/large/4.png", 1);
-		}
-		else if (number == 5)
-		{
-			image.Load("res/number/large/5.png", 1);
-		}
-		else if (number == 6)
-		{
-			image.Load("res/number/large/6.png", 1);
-		}
-		else if (number == 7)
-		{
-			image.Load("res/number/large/7.png", 1);
-		}
-		else if (number == 8)
-		{
-			image.Load("res/number/large/8.png", 1);
-		}
-		else if (number == 9)
-		{
-			image.Load("res/number/large/9.png", 1);
-		}
-		else
-		{
-			image.Load("res/number/large/0.png", 1);
-		}
+		string load_image = "res/number/large/" + to_string(number) + ".png";
+		image.Load(load_image, 1);
 		image.Render((SCREEN_WIDTH - (image.getWidth() * len + (len - 1) * 10)) / 2 + (i + 30) * i, 100);
 	}
 	image.free();
@@ -230,46 +155,9 @@ void game::renderBestScore()
 	for (signed char i = len-1; i >= 0; i--)
 	{
 		signed char number = s[i] - '0';
-		if (number == 1)
-		{
-			image.Load("res/number/small/1.png", scaleNumberS);
-		}
-		else if (number == 2)
-		{
-			image.Load("res/number/small/2.png", scaleNumberS);
-		}
-		else if (number == 3)
-		{
-			image.Load("res/number/small/3.png", scaleNumberS);
-		}
-		else if (number == 4)
-		{
-			image.Load("res/number/small/4.png", scaleNumberS);
-		}
-		else if (number == 5)
-		{
-			image.Load("res/number/small/5.png", scaleNumberS);
-		}
-		else if (number == 6)
-		{
-			image.Load("res/number/small/6.png", scaleNumberS);
-		}
-		else if (number == 7)
-		{
-			image.Load("res/number/small/7.png", scaleNumberS);
-		}
-		else if (number == 8)
-		{
-			image.Load("res/number/small/8.png", scaleNumberS);
-		}
-		else if (number == 9)
-		{
-			image.Load("res/number/small/9.png", scaleNumberS);
-		}
-		else
-		{
-			image.Load("res/number/small/0.png", scaleNumberS);
-		}
+		string image_load = "res/number/small/" + to_string(number) + ".png";
+		image.Load(image_load, scaleNumberS);
+
 		image.Render(260 - image.getWidth()*(len-i-1)*0.75 - 5*(len - i - 1), 315);
 	}
 	image.free();
